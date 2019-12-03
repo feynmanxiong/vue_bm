@@ -3,7 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import ElementUI from 'element-ui'
 
+import './style/base.css'
+import 'element-ui/lib/theme-chalk/index.css'
+import './style/element-modify.css' // 修改element-ui框架样式
+Vue.use(ElementUI)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

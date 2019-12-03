@@ -1,0 +1,5 @@
+.el-header{
+    padding: 0;
+}
+
+.main .el-tabs__item:first-child .el-icon-close{display: none;}

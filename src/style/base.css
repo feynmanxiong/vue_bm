@@ -1,0 +1,17 @@
+/*item position*/
+.text-right{text-align: right;}
+
+/*color*/
+.white{color: #fff;}
+
+/*padding*/
+
+/*margin*/
+.mar-r-20{margin-right: 20px;}
+
+
+/*triangle*/
+.elMenuTriangle{width: 0;height:0;border-top:6px solid transparent;border-right: 6px solid transparent;border-bottom: 6px solid #00a4ff;border-left:6px solid transparent;position: absolute;top:-12px;left:20px;z-index:1;}
+
+/*font-weight*/
+.bold{font-weight: bold;}

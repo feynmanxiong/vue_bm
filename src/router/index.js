@@ -1,15 +1,26 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+
+Vue.component('home',()=>import('../views/home/home.vue'));
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
+      path: '/console',
+      name: 'base',
+      component: () => import(/* webpackChunkName: "base" */ '../Base.vue')
+    },
+    {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'home',
+      redirect: '/login'
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import(/* webpackChunkName: "login" */ '../views/login/login.vue')
     }
   ]
 })
